@@ -1,3 +1,7 @@
+:root {
+    --hover-color: #6DC2E7;
+}
+
 html {
     min-height: 100vh;
     min-width: 100vw;
@@ -10,11 +14,12 @@ html {
 
 body {
     width: 900px;
+    /* background-color: #FFFFFF; */
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    /* padding: 30px; */
     min-width: 500px;
 }
 
@@ -59,14 +64,9 @@ p {
     font-size: 1.8rem;
     font-family: 'Segoe UI', consolas, Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 0px 0px 2px black;
+    /* padding-bottom: 50px; */
 }
 
-/* #title-div:hover #main-title,#title-div:hover #sub-title {
-    text-shadow: 0px 0px 5px #21b1e6;
-} */
-/* #email {
-    text-shadow: 0px 0px 2px black;
-} */
 
 #email span {
     text-shadow: none;
@@ -84,7 +84,7 @@ p {
     transition: all 0.5s;
 }
 
-#biography p {
+.blocks p {
     text-align: justify;
 }
 
@@ -95,6 +95,7 @@ p {
 
 .blocks {
     border-left: 1px solid gray;
+    /* border-right: 1px solid gray; */
     transition: all 0.5s;
 }
 
@@ -106,14 +107,80 @@ p {
 }
 
 .blocks:hover {
-    border-left-color: #21b1e6;
+    border-left-color: var(--hover-color);
 }
 
 .blocks:hover .line {
-    background-color: #21b1e6;
+    background-color: var(--hover-color);
 }
 
 .blocks:hover .small-title {
-    color: #21b1e6;
+    color: var(--hover-color);
     padding-left: 20px;
+}
+
+#introduce-page {
+    display: flex;
+    flex-direction: column;
+    /* width: 95%; */
+    
+}
+
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    /* width: 95%; */
+    margin-bottom: 50px;
+}
+
+
+
+#biography-div {
+    padding-top: 20px;
+}
+
+#head-img-area img {
+    width: 150px;
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+#head-img-area img:hover {
+    rotate: 1080deg;
+}
+
+#title-div p {
+    text-align: center;
+}
+
+#main-nav > div {
+    /* border: 1px solid gray; */
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#info-area {
+    margin-top: 70px;
+    width: 100%;
+    background-color: rgb(45, 43, 43);
+    
+    /* height: 300px; */
+}
+
+.white-font {
+    color: white;
+}
+
+#welcome-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#welcome-area > p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-transform: uppercase;
 }

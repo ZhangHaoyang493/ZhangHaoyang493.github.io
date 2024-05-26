@@ -194,3 +194,24 @@ p {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+#link-area {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.link-logo {
+    width: 25px;
+    transition: all 0.5s;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+/* .link-logo:hover {
+    background-color: gray;
+} */
+
+#copyright {
+    padding-top: 80px;
+}
